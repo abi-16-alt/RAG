@@ -1,0 +1,70 @@
+Here’s how you can do **Option B (Thunder Client or Postman)** step by step:
+
+---
+
+### 🔹 Using Thunder Client in VS Code
+1. **Install Thunder Client**  
+   - Open VS Code.  
+   - Go to Extensions (left sidebar, square icon).  
+   - Search for **Thunder Client** and click **Install**.
+
+2. **Create a New Request**  
+   - Click the Thunder Client icon in the sidebar.  
+   - Click **New Request**.  
+   - Select **POST** as the method.  
+   - Enter the URL:  
+     ```
+     http://127.0.0.1:8000/query
+     ```
+
+3. **Add JSON Body**  
+   - Go to the **Body** tab.  
+   - Select **JSON**.  
+   - Paste:
+     ```json
+     {
+       "question": "What medications are listed for skin rashes?"
+     }
+     ```
+
+4. **Send Request**  
+   - Click **Send**.  
+   - You’ll see the JSON response from your FastAPI server in the right panel.
+
+---
+
+### 🔹 Using Postman
+1. **Download Postman**  
+   - Install from [postman.com/downloads](https://www.postman.com/downloads/).
+
+2. **Create a New Request**  
+   - Open Postman.  
+   - Click **New → HTTP Request**.  
+   - Select **POST**.  
+   - Enter the URL:  
+     ```
+     http://127.0.0.1:8000/query
+     ```
+
+3. **Add JSON Body**  
+   - Go to the **Body** tab.  
+   - Select **raw**.  
+   - Choose **JSON** from the dropdown.  
+   - Paste:
+     ```json
+     {
+       "question": "What medications are listed for skin rashes?"
+     }
+     ```
+
+4. **Send Request**  
+   - Click **Send**.  
+   - You’ll see the JSON response in the lower panel.
+
+---
+
+✅ This proves your REST API works outside Python. Once you confirm this, the next step is to expose it publicly (via **ngrok**) so Google Agentic AI can call it.
+
+---
+
+👉 Do you want me to walk you through **ngrok setup on Windows** so you can immediately get a public HTTPS URL for your FastAPI server? That’s the quickest way to connect your RAG API to Google Agentic AI without deploying to cloud yet.

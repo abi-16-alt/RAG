@@ -1,0 +1,65 @@
+Here’s a clear **step‑by‑step guide** you can follow to set up your environment exactly as described:
+
+---
+
+## 1. Prerequisites
+Make sure you have these installed:
+- **Python 3.10 or higher**
+- **Git** (to clone repositories)
+- **Terminal/Command Prompt** access
+- **Code editor** (Visual Studio Code recommended)
+
+---
+
+## 2. Clone the Repository
+Open your terminal and run:
+
+```bash
+git clone https://github.com/a2aproject/a2a-samples.git -b main --depth 1
+cd a2a-samples
+```
+
+---
+
+## 3. Create a Virtual Environment
+Using Python’s built‑in `venv`:
+
+### On Mac/Linux:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### On Windows:
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+---
+
+## 4. Install Dependencies
+Once the virtual environment is active, install the required packages:
+
+```bash
+pip install -r samples/python/requirements.txt
+```
+
+This will install the **A2A SDK** and its dependencies.
+
+---
+
+## 5. Verify Installation
+Run the following command to confirm everything is set up correctly:
+
+```bash
+python -c "import a2a; print('A2A SDK imported successfully')"
+```
+
+If you see the success message, your environment is ready.
+
+---
+
+✅ That’s it! You now have the A2A samples cloned, a virtual environment set up, dependencies installed, and the SDK verified.  
+
+Would you like me to also create a **ready‑to‑copy checklist script** (like a one‑page demo script you can paste into your terminal) so you don’t have to type each command step by step?
